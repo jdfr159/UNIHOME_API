@@ -33,6 +33,7 @@ exports.crearPropiedad = async (req, res) => {
 exports.listarPropiedades = async (req, res) => {
   try {
     const propiedades = await Propiedades.findAll();
+    console.log(propiedades);  // Agregar un log para verificar los datos
     res.status(200).json({
       message: 'Propiedades listadas exitosamente',
       data: propiedades

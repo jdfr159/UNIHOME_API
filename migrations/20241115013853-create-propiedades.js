@@ -12,7 +12,7 @@ module.exports = {
       tipo: {
         type: Sequelize.STRING
       },
-      dirreccion: {
+      direccion: {
         type: Sequelize.STRING
       },
       barrio: {

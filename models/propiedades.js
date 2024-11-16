@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Propiedades.init({
     tipo: DataTypes.STRING,
-    dirreccion: DataTypes.STRING,
+    direccion: DataTypes.STRING,
     barrio: DataTypes.STRING,
     precio: DataTypes.DECIMAL,
     habitaciones: DataTypes.INTEGER,
