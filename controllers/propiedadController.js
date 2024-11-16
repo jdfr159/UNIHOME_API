@@ -2,12 +2,12 @@ const { Propiedades } = require('../models');
 
 // Crear una nueva propiedad
 exports.crearPropiedad = async (req, res) => {
-  const { tipo, dirreccion, barrio, precio, habitaciones, banos, area, descripcion } = req.body;
+  const { tipo, direccion, barrio, precio, habitaciones, banos, area, descripcion } = req.body;
 
   try {
     const nuevaPropiedad = await Propiedades.create({
       tipo,
-      dirreccion,
+      direccion,
       barrio,
       precio,
       habitaciones,

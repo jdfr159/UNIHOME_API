@@ -6,7 +6,7 @@ const propiedadController = require('../controllers/propiedadController');  // A
 router.post('/crear', propiedadController.crearPropiedad);
 
 //listar
-router.post('/listar', propiedadController.listarPropiedades);
+router.get('/listar', propiedadController.listarPropiedades);
 
 // Ruta para editar una propiedad existente por ID
 router.put('/editar/:id', propiedadController.editarPropiedad);
